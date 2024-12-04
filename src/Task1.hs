@@ -59,7 +59,7 @@ taskFromFile filePath d = do
 -- Main function for demonstration
 task :: (Show a) => ([(Int, Int)] -> a) -> IO ()
 task f = do
-    let filePaths = ["input/example_input1.txt", "input/input1.txt"] -- Replace with the path to your file
+    let filePaths = ["input/input1.txt"] -- Replace with the path to your file
     mapM_ (`taskFromFile` f) filePaths
 
 task1 :: IO ()

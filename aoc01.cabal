@@ -27,6 +27,7 @@ library
   exposed-modules:
       Lib
       Task1
+      Task2
       Task3
   other-modules:
       Paths_aoc01
