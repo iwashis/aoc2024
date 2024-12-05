@@ -2,9 +2,9 @@ module Task2 (
     task2,
 ) where
 
+import Data.Either (rights)
 import Text.Parsec
 import Text.Parsec.String (Parser)
-import Data.Either (rights)
 
 parseInteger :: Parser Int
 parseInteger = do
