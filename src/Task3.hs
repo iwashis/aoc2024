@@ -59,8 +59,8 @@ task3 = do
     let concatenated = concat $ lines contents
     let list = skipNothing <$> parse parseDoDontsInts "" concatenated
     let subtask1 = removeNoYes <$> list
-    print "Task 3. Part 1"
+    putStrLn "Task 3. Part 1"
     print $ compute <$> subtask1
     let subtask2 = removeNoYesIntervals <$> list
-    print "Task 3. Part 2"
+    putStrLn "Task 3. Part 2"
     print $ compute <$> subtask2

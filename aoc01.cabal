@@ -29,6 +29,7 @@ library
       Task1
       Task2
       Task3
+      Task4
   other-modules:
       Paths_aoc01
   autogen-modules:

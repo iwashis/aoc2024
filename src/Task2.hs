@@ -45,7 +45,8 @@ task2 = do
     let parsed = rights (fmap (parse parseIntegers "") linesOfFile)
     let isGood = fmap checkConditions parsed
     let isGood2 = fmap checkPart2Conditions parsed
-    print "Task 2. Part 1."
+
+    putStrLn "Task 2. Part 1"
     print $ countTrues isGood
-    print "Task 2. Part 2."
+    putStrLn "Task 2. Part 2."
     print $ countTrues isGood2

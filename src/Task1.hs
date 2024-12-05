@@ -51,7 +51,7 @@ task2Calculate list = sum $ map (uncurry (*)) $ applyHowOften list
 
 taskFromFile :: (Show b) => String -> ([(Int, Int)] -> b) -> IO ()
 taskFromFile filePath d = do
-    print filePath
+    putStrLn "Task 1. Part 1"
     pairs <- readFileAndParse filePath
     let value = d pairs
     putStrLn $ "Value " ++ show value
@@ -64,6 +64,5 @@ task f = do
 
 task1 :: IO ()
 task1 = do
-    print "Task 1"
     task distance
     task task2Calculate
